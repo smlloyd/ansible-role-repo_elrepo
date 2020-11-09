@@ -1,0 +1,10 @@
+---
+# tasks file for smlloyd.repo_elrepo
+- name: Import gpg key
+  rpm_key:
+    key: "{{ repo_elrepo_key_url }}"
+
+- name: Install elrepo-release package
+  yum:
+    name: "{{ repo_elrepo_release_url }}"
+    state: present

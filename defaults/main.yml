@@ -1,0 +1,4 @@
+---
+# defaults file for smlloyd.repo_elrepo
+repo_elrepo_key_url: "https://www.elrepo.org/RPM-GPG-KEY-elrepo.org"
+repo_elrepo_release_url: "https://www.elrepo.org/elrepo-release-{{ ansible_distribution_major_version }}.el{{ ansible_distribution_major_version }}.elrepo.noarch.rpm"

@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include smlloyd.repo_elrepo"
+      include_role:
+        name: "smlloyd.repo_elrepo"
